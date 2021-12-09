@@ -20,18 +20,20 @@
     var CONFIG = {"hostname":"xiongkuoxin.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="No one can be just like me any way">
-<meta property="og:type" content="website">
-<meta property="og:title" content="斗破D刀塔">
-<meta property="og:url" content="https://xiongkuoxin.github.io/archives/2021/12/index.html">
+  <meta name="description" content="使用 Docker 作为非 root 用户使用，将用户加入docker组$ sudo usermod -aG docker your-user-name$sudo service docker start  查看docker配置文件daemon.json$sudo docker info  为docker 客户端设置代理使用以下命令创建~&#x2F;.docker目录$mkdir ~&#x2F;.docker在~&#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Docker常用命令">
+<meta property="og:url" content="https://xiongkuoxin.github.io/2021/11/17/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="斗破D刀塔">
-<meta property="og:description" content="No one can be just like me any way">
+<meta property="og:description" content="使用 Docker 作为非 root 用户使用，将用户加入docker组$ sudo usermod -aG docker your-user-name$sudo service docker start  查看docker配置文件daemon.json$sudo docker info  为docker 客户端设置代理使用以下命令创建~&#x2F;.docker目录$mkdir ~&#x2F;.docker在~&#x2F;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-11-17T04:00:43.000Z">
+<meta property="article:modified_time" content="2021-12-09T15:18:38.648Z">
 <meta property="article:author" content="Xiong Kuoxin">
-<meta property="article:tag" content="blog">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://xiongkuoxin.github.io/archives/2021/12/">
+<link rel="canonical" href="https://xiongkuoxin.github.io/2021/11/17/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
 
 
 <script id="page-configurations">
@@ -39,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Archive | 斗破D刀塔</title>
+  <title>Docker常用命令 | 斗破D刀塔</title>
   
 
 
@@ -158,90 +160,115 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 9 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://xiongkuoxin.github.io/2021/11/17/Docker%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/author%E5%A4%B4%E5%83%8F.jpg">
+      <meta itemprop="name" content="Xiong Kuoxin">
+      <meta itemprop="description" content="No one can be just like me any way">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="斗破D刀塔">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Docker常用命令
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-11-17 12:00:43" itemprop="dateCreated datePublished" datetime="2021-11-17T12:00:43+08:00">2021-11-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-12-09 23:18:38" itemprop="dateModified" datetime="2021-12-09T23:18:38+08:00">2021-12-09</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Docker/" itemprop="url" rel="index"><span itemprop="name">Docker</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
-    </div>
+        <ol>
+<li><p>使用 Docker 作为非 root 用户使用，将用户加入docker组<br><code>$ sudo usermod -aG docker your-user-name</code><br><code>$sudo service docker start</code></p>
+</li>
+<li><p>查看docker配置文件daemon.json<br><code>$sudo docker info</code></p>
+</li>
+<li><p>为docker 客户端设置代理<br>使用以下命令创建<code>~/.docker</code>目录<br><code>$mkdir ~/.docker</code><br>在<code>~/.docker/config.json</code> 中设置代理项如下：</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;proxies&quot;: &#123;</span><br><span class="line">        &quot;default&quot;: &#123;</span><br><span class="line">            &quot;httpProxy&quot;: &quot;http://**********&quot;,</span><br><span class="line">            &quot;httpsProxy&quot;: &quot;http://************&quot;,</span><br><span class="line">            &quot;noProxy&quot;: &quot;**********,****&quot;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-12-06T22:49:35+08:00"
-              content="2021-12-06">
-          12-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/12/06/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-12-03T12:00:43+08:00"
-              content="2021-12-03">
-          12-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/12/03/Vscode%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">Vscode基础</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2021-12-03T12:00:43+08:00"
-              content="2021-12-03">
-          12-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/12/03/Vscode%E6%89%A9%E5%B1%95/" itemprop="url">
-            <span itemprop="name">Vscode扩展</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p> 备注：在<code>~/.docker/config.json</code>中设置的代理将自动作为启动容器的环境变量传递。请注意，它与docker daemon的代理设置不同。</p>
+</li>
+<li><p>docker的启动、停止、重启</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">service docker start</span><br><span class="line">service docker stop</span><br><span class="line">service docker restart</span><br></pre></td></tr></table></figure></li>
+<li><p>启动、停止、重启某个docker 容器</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker start 容器名/容器ID</span><br><span class="line">docker stop 容器名/容器ID</span><br><span class="line">docker restart 容器名/容器ID</span><br></pre></td></tr></table></figure></li>
+<li><p>公共部分</p>
+ <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">docker ps   //docker启动的容器列表</span><br><span class="line">docker ps -a  //查看docker创建的所有容器</span><br><span class="line">docker logs -f yufei_01 //查看指定容器的日志记录</span><br><span class="line">docker rm yufei_01   //删除某个容器，若正在运行，需要先停止</span><br><span class="line">docker rm $(docker ps -a -q)  //删除所有容器</span><br><span class="line">docker -v  //查看docker版本信息</span><br><span class="line">docker search image_name //检索image</span><br><span class="line">docker pull image_name   //下载镜像</span><br><span class="line">docker history image_name  //显示一个镜像的历史</span><br><span class="line">docker top Name/ID   显示一个运行的容器里面的进程信息</span><br></pre></td></tr></table></figure></li>
+<li></li>
+</ol>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Docker/" rel="tag"># Docker</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/11/16/Dockers%E5%AE%89%E8%A3%85/" rel="prev" title="Docker安装">
+      <i class="fa fa-chevron-left"></i> Docker安装
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/11/17/Docker%E5%B8%B8%E7%94%A8/" rel="next" title="Docker常用">
+      Docker常用 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
